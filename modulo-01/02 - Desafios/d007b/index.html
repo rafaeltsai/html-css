@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <title>Imagem Flexível</title>
+    </head>
+    <body>
+        <h1>Imagem Flexível</h1>
+        <p>
+            Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência das imagens &#x1F973;
+        </p>
+
+        
+        <picture>
+            <source media="(max-width:  500px)" srcset="imagens/paisagem-p.png" type="image/png">
+            <source media="(max-width: 1000px)" srcset="imagens/paisagem-m.png" type="image/png">
+            <img src="imagens/paisagem-g.png" alt="A imagem carregou">
+        </picture>
+
+    </body>
+</html>

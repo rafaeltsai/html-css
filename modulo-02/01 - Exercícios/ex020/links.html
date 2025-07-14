@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Links personalizados</title>
+        <style>
+
+            /*
+                #  =  id
+                .  = class
+                :  = psuedo-class
+                :: = pseudo-elemento
+                >  = children 
+            */
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color: red;
+            }
+
+            a:visited {
+                color: darkred;
+            }
+
+            a:hover {
+                color: black;
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: green;
+            }
+            
+            .especial:hover {
+                color: white;
+                background-color: black;
+                text-decoration: none;
+            }
+
+            .especial::before {
+                content: '>>';
+                font-weight: lighter;
+            }
+
+            .especial::after {
+                content: '<<';
+                font-weight: lighter;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <h1>Personalizando Links</h1>
+
+        <ul>
+            <li>
+                <p>
+                    Para aprender HTML e CSS3, acesse o
+                    <a href="https://gustavoguanabara.github.io"
+                        hreflang="pt-br"
+                        rel="external"
+                        target="_blank">
+                        GitHub do Guanabara
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Se quiser conhecer mais sobre os padrões, visite o seite do
+                    <a href="https://www.w3c.br"
+                        hreflang="pt-br"
+                        rel="external"
+                        target="_blank">Escritório do W3C no Brasil</a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Para acompanhar os cursos, acesse o
+                    <a href="https://youtube.com/cursoemvideo"
+                        hreflang="pt-br"
+                        rel="external"
+                        target="_blank"
+                        class="especial">Canal do CursoEmVideo</a>
+                </p>
+            </li>
+        </ul>
+    </body>
+</html>
